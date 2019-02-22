@@ -2,7 +2,7 @@
 public class InsertionSort implements SortingAlgorithm
 {
     int temp;
-    void sort(int [] a){
+    public void sort(int [] a){
         for(int i=1; i< a.length; i++)
         {
             temp= a[i];
