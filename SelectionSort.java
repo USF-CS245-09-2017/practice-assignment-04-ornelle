@@ -1,6 +1,6 @@
 public class SelectionSort implements SortingAlgorithm {
 
-    void sort(int []a) {
+    public void sort(int []a) {
         for(int i=0; i<a.length-1; i++)
         {
             int min= i;
@@ -9,9 +9,9 @@ public class SelectionSort implements SortingAlgorithm {
                 if(a[j]<a[min])
                     min=j;
             }
-            int temp= arr[mid];
-            arr[mid]= arr[i];
-            arr[i]=temp;
+            int temp= a[min];
+            a[min]= a[i];
+            a[i]=temp;
         }
     }
 }
